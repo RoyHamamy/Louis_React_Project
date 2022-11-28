@@ -1,0 +1,14 @@
+.image {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 50%;
+}
+
+.headline {
+    position:absolute;
+    left: 30%;
+    top: 15%;
+    color: black;
+    font-size: 90px;
+  }

@@ -1,0 +1,46 @@
+.container {
+  background: rgb(238, 241, 227);
+  border-radius: 40px;
+  position: relative;
+  text-align: left;
+  text-overflow: inherit;
+  left: 23vw;
+  top: 20vh;
+  margin-bottom: 12%;
+  width: 50vw;
+  height: 80vh;
+  padding: 2%;
+}
+
+.questions {
+  font-size: 4vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: brown;
+  padding: 1%;
+}
+
+.questions input {
+  height: 4vh;
+  width: 45%;
+  border-radius: 1rem;
+  font-size: 3vh;
+}
+
+.questions label {
+  height: 4vh;
+  width: 55%;
+  border-radius: 20%;
+  font-size: 3vh;
+}
+
+.btn {
+  height: 7vh;
+  width: 30%;
+  border-radius: 20%;
+  font-size: 3vh;
+}
+
+.btn:hover {
+  color: white;
+  background-color: green;
+}
