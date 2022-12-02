@@ -1,11 +1,10 @@
+import classes from "./NewPost.module.css";
 import { useRef, useState } from "react";
 import ErrorOverlay from "../overlays/ErrorOverlay";
 import SuccessOverlay from "../overlays/SuccessOverlay";
-import classes from "./Fitness.module.css";
-import FitnessPosts from "./FitnessPosts";
 import LoadingSpinner from "../UI/LoadingSpinner";
 
-const Fitness = () => {
+const NewPost = (props) => {
   const [error, setError] = useState("");
   const [isSent, setIsSent] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -27,7 +26,7 @@ const Fitness = () => {
         current.getMonth() + 1
       }/${current.getFullYear()} at ${current.getHours()}:${current.getMinutes()}`;
       const response = await fetch(
-        "https://react-http-b58c9-default-rtdb.firebaseio.com/fitness.json",
+        `https://react-http-b58c9-default-rtdb.firebaseio.com/${props.firebase}.json`,
         {
           method: "POST",
           body: JSON.stringify({
@@ -53,7 +52,6 @@ const Fitness = () => {
       }
     }
   };
-
   return (
     <div>
       {error !== "" && (
@@ -74,7 +72,7 @@ const Fitness = () => {
         />
       )}
       <div className={classes.container}>
-        <h2 className={classes.headline_top}>Add new Post</h2>
+        <h2 className={classes.headline_top} onClick={props.onCancel}>Add new Post</h2>
         <br />
         <h1 className={classes.headline}>Author:</h1>
         <textarea
@@ -99,21 +97,19 @@ const Fitness = () => {
           ref={textRef}
         />
         <br />
-        {!isLoading && (
+        {!isLoading && (<div>
           <button className={classes.btn} onClick={postHandler}>
             Post
           </button>
+          <button className={classes.btn} onClick={props.onCancel}>
+            Cancel
+          </button>
+          </div>
         )}
         {isLoading && <LoadingSpinner />}
-      </div>
-      <div className={classes.container}>
-        <h2 className={classes.headline_top}>Posts:</h2>
-        <br />
-        <br />
-        <FitnessPosts />
       </div>
     </div>
   );
 };
 
-export default Fitness;
+export default NewPost;

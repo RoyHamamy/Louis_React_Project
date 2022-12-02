@@ -77,20 +77,19 @@ const RegisterForm = (props) => {
           <br />
           <input type="text" ref={emailInputRef} />
           <br />
+          <label>Please make sure that you type a valid Email Address.</label>
+          <br/>
           <br />
           <h3>Please enter a password :</h3>
           <br />
           <input type="password" ref={passwordInputRef} />
           <br />
+          <label>Password requires a minimum length of 6.</label>
+          <br />
           <br />
           <h3>Please enter password again :</h3>
           <br />
           <input type="password" ref={secondPasswordInputRef} />
-          <br />
-          <br />
-          <label>Please make sure that you type a valid Email Addres,</label>
-          <br />
-          <label>As well as a Password with a minimum length of 6.</label>
           <br />
           <br />
           {!isLoading && (

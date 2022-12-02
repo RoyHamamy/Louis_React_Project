@@ -1,0 +1,38 @@
+.container {
+  padding: 1%;
+  margin-bottom: 8%;
+  border: 1px solid #c1d1d1;
+  display: block;
+  border-radius: 3rem;
+  width: 65vw;
+  min-height: 8vh;
+  position: relative;
+  top: 10vh;
+  left: 15vw;
+  background-color: whitesmoke;
+}
+
+.title {
+  text-align: center;
+  font-size: 7vh;
+  color: turquoise;
+  font-family: cursive;
+}
+
+.headline_top {
+  text-align: center;
+  font-size: 7vh;
+  color: teal;
+  font-family: cursive;
+}
+
+.headline_top:hover {
+  color: turquoise;
+}
+
+.headline_post {
+  text-align: center;
+  font-size: 7vh;
+  color: teal;
+  font-family: cursive;
+}

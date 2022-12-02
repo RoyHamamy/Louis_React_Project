@@ -1,7 +1,7 @@
-import Calories from "../components/home/Calories";
+import BlogPage from "../components/home/BlogPage";
 
 const CaloriesPage = () => {
-  return <Calories />;
+  return <BlogPage context="nutrition" />;
 };
 
 export default CaloriesPage;

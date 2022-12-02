@@ -1,51 +1,53 @@
 .image {
-  left: 72vw;
-  top: 53vh;
+  left: 64vw;
+  bottom: 13vh;
   position: relative;
 }
 
 .container {
   background: rgb(238, 241, 227);
-  border-radius: 40px;
+  border-radius: 3rem;
   position: relative;
-  overflow: hidden;
-  left: 23vw;
-  bottom: 32vh;
-  width: 50vw;
-  height: 65vh;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  margin-top: 3%;
+  left: 18vw;
+  width: 45vw;
+  min-height: 60vh;
 }
 
-.second_text {
+.container p {
   color: #cd9f63;
-  font-size: 30px;
-  white-space: nowrap;
+  font-size: 4vh;
   position: relative;
-  left: 3vh;
-  top: 10vh;
+  padding-left: 3%;
+  top: 4vw;
 }
 
-.second_text h3 {
+.container h3 {
+  color: #cd9f63;
   position: relative;
-  right: 1vh;
-  bottom: 6vh;
-  font-size: 8vh;
+  top: 2vw;
+  padding-left: 3%;
+  font-size: 7vh;
 }
 
 .tab {
   position: relative;
-  bottom: 15vh;
-  right: 3vh;
+  top: 6vw;
+  box-sizing: border-box;
   margin: 0 auto;
   width: 30vw;
   display: flex;
+  list-style-type:none;
   justify-content: space-between;
 }
 
 .second_link {
-  padding-left: 3vw;
-  padding-right: 3vw;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
   text-align: center;
   border-radius: 50%;
   border-style: solid;
@@ -54,9 +56,6 @@
   background-color: antiquewhite;
   font-size: 2vw;
   text-decoration: none;
-  position: relative;
-  left: 0vw;
-  top: 23vh;
 }
 
 .second_link:hover {

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import Post from "./Post";
-import classes from "./FitnessPosts.module.css";
+import classes from "./BlogPosts.module.css";
 
-const FitnessPosts = () => {
+const BlogPosts = (props) => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     const fetchPosts = async () => {
       const response = await fetch(
-        "https://react-http-b58c9-default-rtdb.firebaseio.com/fitness.json"
+        `https://react-http-b58c9-default-rtdb.firebaseio.com/${props.context}.json`
       );
       const responseData = await response.json();
 
@@ -25,7 +25,7 @@ const FitnessPosts = () => {
       setPosts(loadedPosts);
     };
     fetchPosts();
-  }, [posts]);
+  }, [posts,props.context]);
 
   const postsList = posts
     .reverse()
@@ -49,4 +49,4 @@ const FitnessPosts = () => {
   );
 };
 
-export default FitnessPosts;
+export default BlogPosts;

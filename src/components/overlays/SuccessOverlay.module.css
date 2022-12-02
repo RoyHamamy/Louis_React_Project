@@ -9,41 +9,41 @@
 }
 
 .container {
-  text-align: center;
-  text-overflow: ellipsis;
   position: absolute;
   border-radius: 25%;
   top: 30%;
-  left: 30%;
-  width: 40%;
-  height: 50%;
-  overflow: hidden;
+  left: 25vw;
+  width: 45vw;
+  min-height: 50%;
+  text-overflow: ellipsis;
   background-color: white;
 }
 
 .container p {
   position: relative;
-  font-size: 330%;
-  top: 15vh;
+  text-align: center;
+  font-size: 4vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  top: 10vh;
   color: rgb(10, 208, 10);
 }
 
 .container button {
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 1%;
-  padding-bottom: 1%;
   border-radius: 35%;
-  position: absolute;
+  position: relative;
   text-align: center;
-  font-size: 230%;
-  top: 65%;
-  left: 35%;
-  color: black;
+  box-sizing: border-box;
+  font-size: 3vw;
+  padding: 2%;
+  top: 15vh;
+  left: 17vw;
 }
 
 .container button:hover {
-  background-color: rgb(10, 208, 10);
-  color: white;
-  border-color: white;
+    background-color: rgb(10, 208, 10);
+    color: white;
+    border-color: white;
 }
+
+

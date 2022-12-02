@@ -1,7 +1,7 @@
-import Fitness from "../components/home/Fitness";
+import BlogPage from "../components/home/BlogPage";
 
 const FitnessPage = () => {
-  return <Fitness />;
+  return <BlogPage context="fitness" />;
 };
 
 export default FitnessPage;

@@ -5,12 +5,12 @@
 .body h3 {
     font-size: 10vh;
     font-family:cursive;
-    color: whitesmoke;
+    color: turquoise;
 }
 
 .container {
     padding: 1%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     border: 1px solid #c1d1d1;
     display: block;
     border-radius: 3rem;
@@ -23,7 +23,7 @@
 .container h2 {
     text-align: left;
     padding-left: 3%;
-    color: rgb(242, 179, 91);
+    color: turquoise;
     font-size: 6vh;
     font-family: cursive;
 }
@@ -32,6 +32,7 @@
     text-align: left;
     padding-left: 3%;
     font-size: 3vh;
+    color: teal;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -39,4 +40,12 @@
     width: 60vw;
     height: 65vh;
     border-radius: 5rem;    
+}
+
+.explore {
+    color: blue;
+}
+
+.explore:hover {
+    color: lightblue;
 }

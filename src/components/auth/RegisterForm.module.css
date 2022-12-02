@@ -3,10 +3,10 @@
   border-radius: 40px;
   position: relative;
   text-align: left;
-  text-overflow: inherit;
+  text-overflow:ellipsis;
   left: 23vw;
-  top: 20vh;
-  margin-bottom: 12%;
+  top: 35vh;
+  margin-bottom: 20%;
   width: 50vw;
   height: 80vh;
   padding: 2%;
@@ -15,7 +15,7 @@
 .questions {
   font-size: 4vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: brown;
+  color: turquoise;
   padding: 1%;
 }
 
@@ -30,7 +30,7 @@
   height: 4vh;
   width: 55%;
   border-radius: 20%;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 .btn {
@@ -42,5 +42,5 @@
 
 .btn:hover {
   color: white;
-  background-color: green;
+  background-color: turquoise;
 }

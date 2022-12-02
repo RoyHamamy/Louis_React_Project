@@ -13,7 +13,7 @@
 .headline {
   text-align: left;
   padding-left: 3%;
-  color: rgb(242, 179, 91);
+  color: teal;
   font-size: 5vh;
   font-family: cursive;
 }
@@ -21,8 +21,12 @@
 .headline_top {
   text-align: center;
   font-size: 7vh;
-  color: rgb(242, 179, 91);
+  color: teal;
   font-family: cursive;
+}
+
+.headline_top:hover {
+    color: turquoise;
 }
 
 .input_author {
@@ -62,16 +66,16 @@
 }
 
 .btn {
-  position:relative;
+  position: relative;
   width: 10vw;
   padding: 1%;
   border-radius: 20%;
   font-size: 3vh;
-  left: 25vw;
+  left: 20vw;
   margin: 2%;
 }
 
 .btn:hover {
   color: white;
-  background-color: rgb(242, 179, 91);
+  background-color: teal;
 }

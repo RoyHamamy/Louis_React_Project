@@ -15,7 +15,7 @@
 .questions {
   font-size: 4vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: brown;
+  color: turquoise;
   padding: 1%;
 }
 
@@ -42,5 +42,5 @@
 
 .btn:hover {
   color: white;
-  background-color: green;
+  background-color: turquoise;
 }

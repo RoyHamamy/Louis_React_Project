@@ -1,6 +1,9 @@
 .body {
-    height: 10vh;
-    background-color: rgb(255, 152, 18);
+    position: relative;
+    bottom: 0;
+    background-color: rgb(165, 230, 223);
     text-align: center;
-    margin: 8%;
+    margin-top: 2%;
+    padding: 2%;
+    color: black;
 }

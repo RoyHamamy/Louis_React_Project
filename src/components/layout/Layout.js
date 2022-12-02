@@ -8,97 +8,19 @@ const Layout = (props) => {
   return (
     <div className={classes.header}>
       {props.text === "home" && (
-        <div>
-          <img
-            src={chewbacca}
-            alt=""
-            onClick={() => {
-              history.replace("/home");
-            }}
-          />
-          <button
-            className={classes.logout}
-            onClick={() => {
-              props.onLogout();
-              history.replace("/");
-            }}
-          >
-            Logout
-          </button>
-          {props.text2 === "insideFitness" && (
-            <React.Fragment>
-              <button
-                className={classes.back}
-                onClick={() => {
-                  history.replace("/home");
-                }}
-              >
-                Back
-              </button>
-              <button
-                className={classes.calories}
-                onClick={() => {
-                  history.replace("/calories");
-                }}
-              >
-                Calories
-              </button>
-            </React.Fragment>
-          )}
-          {props.text2 === "insideCalories" && (
-            <React.Fragment>
-              <button
-                className={classes.back}
-                onClick={() => {
-                  history.replace("/home");
-                }}
-              >
-                Back
-              </button>
-              <button
-                className={classes.fitness}
-                onClick={() => {
-                  history.replace("/fitness");
-                }}
-              >
-                Fitness
-              </button>
-            </React.Fragment>
-          )}
-          {props.text2 === "both" && (
-            <React.Fragment>
-              <button
-                className={classes.back}
-                onClick={() => {
-                  history.replace("/home");
-                }}
-              >
-                Back
-              </button>
-              <button
-                className={classes.fitness}
-                onClick={() => {
-                  history.replace("/fitness");
-                }}
-              >
-                Fitness
-              </button>
-              <button
-                className={classes.calories}
-                onClick={() => {
-                  history.replace("/calories");
-                }}
-              >
-                Calories
-              </button>
-            </React.Fragment>
-          )}
-        </div>
+        <img
+          src={chewbacca}
+          alt=""
+          onClick={() => {
+            history.replace("/home");
+          }}
+        />
       )}
-      <h1>Louis - Making Fitness Fun!</h1>
+      <h1>Louis - Health is Wealth!</h1>
+      <ul className={classes.ul}>
       {props.text === "welcome" && (
         <button
-          className={classes.logout}
+          className={classes.btn}
           onClick={() => {
             history.replace("/connect");
           }}
@@ -106,8 +28,45 @@ const Layout = (props) => {
           Back
         </button>
       )}
+      {props.text === "home" && props.text2 !== "insideFitness" &&
+            <button
+              className={classes.btn}
+              onClick={() => {
+                history.replace("/fitness");
+              }}
+            >
+              Fitness
+            </button> }
+            {props.text === "home" && props.text2 !== "insideCalories" && <button
+              className={classes.btn}
+              onClick={() => {
+                history.replace("/calories");
+              }}
+            >
+              Nutrition
+            </button> }
+            {(props.text2 === "insideFitness" || props.text2 === "insideCalories" )&& (
+              <button
+                className={classes.btn}
+                onClick={() => {
+                  history.replace("/home");
+                }}
+              >
+                Back
+              </button>
+          )}
+            {props.text === "home" && <button
+              className={classes.btn}
+              onClick={() => {
+                props.onLogout();
+                history.replace("/");
+              }}
+            >
+              Logout
+            </button> }
+          </ul>
     </div>
-  );
+  )
 };
 
 export default Layout;
